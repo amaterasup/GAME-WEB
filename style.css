@@ -1,0 +1,58 @@
+html{
+    cursor: none;
+}
+.main-screen{
+    width: 100%;
+    height: 75vh;
+    background: red;
+    display: flex;
+}
+#player-1{
+    pointer-events: none;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: blue ;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* transform-origin: center; */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: greenyellow;
+    justify-content: center;
+    /* left: 100px;
+    top: 100px; */
+    #eye{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 5px;
+        background-color: blue;
+    }
+    .center{
+        position: absolute;
+        align-self: center;
+    }
+}
+.pivot{
+    position: absolute;
+    left: -15px;
+    align-self: center;
+    width: 5px;
+    height: 5px;
+    transform-origin: center;
+    background-color: blueviolet;
+}
+.cursor-sp{
+    z-index: 999;
+    pointer-events: none;
+    position: absolute;
+    background: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
